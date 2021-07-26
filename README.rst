@@ -37,7 +37,7 @@ This code runs using python3, and is enabled by HistomicsTK and Docker.
 - scipy [1.5.4]
 
 
-**Usage: **
+**Usage:**
 -----------
 **Running PodoCount in the cloud via the Sarder Lab's Digital Slide Archive and Viewer**
 
