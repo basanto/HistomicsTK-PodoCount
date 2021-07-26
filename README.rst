@@ -52,6 +52,7 @@ An instructional video has been prepared as a guide for first-time users and is 
 
 
 **For questions or feedback, please contact:**
+
 - Briana Santo <basanto@buffalo.edu>
 - Pinaki Sarder <pinakisa@buffalo.edu>
 
