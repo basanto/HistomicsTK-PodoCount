@@ -10,11 +10,11 @@ This repository contains the source codes for the publication, "PodoCount: A rob
 
 ---
 
-## A pre-print version of this work is available at: X
+**A pre-print version of this work is available at: X**
 
 *Prepared by Briana Santo at SUNY Buffalo on 27July2021*
 
-## Image Data
+**Image Data**
 
 Whole slide images (WSIs) of murine kidney data are available at: http://bit.ly/3rdGPEd. Murine data includes whole kidney sections derived from both wild type and diseased mice across six mouse models [T2DM A, T2DM B, Aging, FSGS (SAND), HIVAN, Progeroid]. All kidney specimens were stained with p57kip2 immunohistochemistry and Periodic Acid-Schiff (without Hematoxylin counter stain) prior to digitization. 
 
