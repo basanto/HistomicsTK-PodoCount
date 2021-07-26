@@ -2,7 +2,7 @@
 PodoCount in the Cloud
 ================================================
 
-__A cloud-based tool for whole-slide podocyte quantification__
+# A cloud-based tool for whole-slide podocyte quantification
 
 **Version 1.0.0**
 
