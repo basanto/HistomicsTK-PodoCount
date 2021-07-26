@@ -10,8 +10,8 @@ This repository contains the source codes for the publication, "PodoCount: A rob
 
 ---
 
-A pre-print version of this work is available at: X
-*******************************************************
+**A pre-print version of this work is available at: X**
+
 
 *Prepared by Briana Santo at SUNY Buffalo on 27July2021*
 
