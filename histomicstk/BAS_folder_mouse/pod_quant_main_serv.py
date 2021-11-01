@@ -93,6 +93,7 @@ for WSI in range(1,2):
     WSI_levels = WSI_file.level_dimensions[level]
     downsample_factor=16
     df2 = np.sqrt(downsample_factor)
+    df = downsample_factor
 
     #get whole-slide glom mask
 #    WSI_glom_xml = cwd + '/glom_xmls/' + WSI_name + '.xml'
@@ -117,7 +118,7 @@ for WSI in range(1,2):
 
     #get ROI coordinates
     print('-- Step 1: Glomerulus localization and quantification --\n')
-    bbs, total_gloms, glom_feat_labels, glom_feat_qty, glom_feat_array = get_glom_props(WSI_glom_mask,WSI_downsample,num_sections,dist_mpp,area_mpp2,df2)
+    bbs, total_gloms, glom_feat_labels, glom_feat_qty, glom_feat_array = get_glom_props(WSI_glom_mask,WSI_downsample,num_sections,dist_mpp,area_mpp2,df2,df)
 
     #define pod feature spaces
     pod_feat_labels, pod_feat_qty, pod_feat_array = get_pod_feat_spaces(total_gloms)
