@@ -9,7 +9,7 @@ import scipy as sp
 import cv2
 
 ###GLOM FEATURE ENGINEERING AND EXTRACTION###
-def get_glom_props(glom_image,tissue_image,num_sections,dist_mpp,area_mpp2,df2):
+def get_glom_props(glom_image,tissue_image,num_sections,dist_mpp,area_mpp2,df2,df):
     if num_sections >1:
 
         se = sk.morphology.disk(3)
@@ -45,11 +45,11 @@ def get_glom_props(glom_image,tissue_image,num_sections,dist_mpp,area_mpp2,df2):
 
             s_label.append(1)
             glomID.append(glom+1)
-            areas.append((s1_gen_props[glom].area)*df2*area_mpp2)
+            areas.append((s1_gen_props[glom].area)*df*area_mpp2)
             bbs.append(s1_gen_props[glom].bbox)
-            bb_areas.append((s1_gen_props[glom].bbox_area)*df2*area_mpp2)
+            bb_areas.append((s1_gen_props[glom].bbox_area)*df*area_mpp2)
             centroids.append(s1_gen_props[glom].centroid)
-            convex_areas.append((s1_gen_props[glom].convex_area)*df2*area_mpp2)
+            convex_areas.append((s1_gen_props[glom].convex_area)*df*area_mpp2)
             eccentricities.append(s1_gen_props[glom].eccentricity)
             equiv_diams.append((s1_gen_props[glom].equivalent_diameter)*df2*dist_mpp)
             extents.append(s1_gen_props[glom].extent)
@@ -63,11 +63,11 @@ def get_glom_props(glom_image,tissue_image,num_sections,dist_mpp,area_mpp2,df2):
         for glom in range(s2_glom_count):
             s_label.append(2)
             glomID.append(glom+1)
-            areas.append((s2_gen_props[glom].area)*df2*area_mpp2)
+            areas.append((s2_gen_props[glom].area)*df*area_mpp2)
             bbs.append(s2_gen_props[glom].bbox)
-            bb_areas.append((s2_gen_props[glom].bbox_area)*df2*area_mpp2)
+            bb_areas.append((s2_gen_props[glom].bbox_area)*df*area_mpp2)
             centroids.append(s2_gen_props[glom].centroid)
-            convex_areas.append((s2_gen_props[glom].convex_area)*df2*area_mpp2)
+            convex_areas.append((s2_gen_props[glom].convex_area)*df*area_mpp2)
             eccentricities.append(s2_gen_props[glom].eccentricity)
             equiv_diams.append((s2_gen_props[glom].equivalent_diameter)*df2*dist_mpp)
             extents.append(s2_gen_props[glom].extent)
@@ -106,11 +106,11 @@ def get_glom_props(glom_image,tissue_image,num_sections,dist_mpp,area_mpp2,df2):
         for glom in range(glom_count):
             s_label.append(1)
             glomID.append(glom+1)
-            areas.append((gen_props[glom].area)*df2*area_mpp2)
+            areas.append((gen_props[glom].area)*df*area_mpp2)
             bbs.append(gen_props[glom].bbox)
-            bb_areas.append((gen_props[glom].bbox_area)*df2*area_mpp2)
+            bb_areas.append((gen_props[glom].bbox_area)*df*area_mpp2)
             centroids.append(gen_props[glom].centroid)
-            convex_areas.append((gen_props[glom].convex_area)*df2*area_mpp2)
+            convex_areas.append((gen_props[glom].convex_area)*df*area_mpp2)
             eccentricities.append(gen_props[glom].eccentricity)
             equiv_diams.append((gen_props[glom].equivalent_diameter)*df2*dist_mpp)
             extents.append(gen_props[glom].extent)
